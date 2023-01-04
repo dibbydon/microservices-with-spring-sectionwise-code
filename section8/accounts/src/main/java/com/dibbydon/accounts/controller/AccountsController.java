@@ -6,7 +6,7 @@ package com.dibbydon.accounts.controller;
 import com.dibbydon.accounts.model.*;
 import com.dibbydon.accounts.service.client.LoansFeignClient;
 import com.dibbydon.accounts.config.AccountsServiceConfig;
-import com.eazybytes.accounts.model.*;
+import com.dibbydon.accounts.model.*;
 import com.dibbydon.accounts.repository.AccountsRepository;
 import com.dibbydon.accounts.service.client.CardsFeignClient;
 import com.fasterxml.jackson.core.JsonProcessingException;
