@@ -339,9 +339,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eazybytes.accounts.model.Accounts;
-import com.eazybytes.accounts.model.Customer;
-import com.eazybytes.accounts.repository.AccountsRepository;
+import model.com.dibbydon.accounts.Accounts;
+import model.com.dibbydon.accounts.Customer;
+import repository.com.dibbydon.accounts.AccountsRepository;
 
 /**
  * @author Eazy Bytes
@@ -383,9 +383,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eazybytes.loans.model.Customer;
-import com.eazybytes.loans.model.Loans;
-import com.eazybytes.loans.repository.LoansRepository;
+import model.com.dibbydon.loans.Customer;
+import model.com.dibbydon.loans.Loans;
+import repository.com.dibbydon.loans.LoansRepository;
 
 /**
  * @author Eazy Bytes
@@ -426,9 +426,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eazybytes.cards.model.Cards;
-import com.eazybytes.cards.model.Customer;
-import com.eazybytes.cards.repository.CardsRepository;
+import model.com.dibbydon.cards.Cards;
+import model.com.dibbydon.cards.Customer;
+import repository.com.dibbydon.cards.CardsRepository;
 
 /**
  * @author Eazy Bytes
@@ -531,7 +531,7 @@ package com.eazybytes.accounts.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.eazybytes.accounts.model.Accounts;
+import model.com.dibbydon.accounts.Accounts;
 
 @Repository
 public interface AccountsRepository extends CrudRepository<Accounts, Long> {
@@ -613,7 +613,7 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.eazybytes.loans.model.Loans;
+import model.com.dibbydon.loans.Loans;
 
 @Repository
 public interface LoansRepository extends CrudRepository<Loans, Long> {
@@ -698,7 +698,7 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.eazybytes.cards.model.Cards;
+import model.com.dibbydon.cards.Cards;
 
 @Repository
 public interface CardsRepository extends CrudRepository<Cards, Long> {

@@ -213,8 +213,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.eazybytes.accounts.model.Customer;
-import com.eazybytes.accounts.model.Loans;
+import model.com.dibbydon.accounts.Customer;
+import model.com.dibbydon.accounts.Loans;
 
 @FeignClient("loans")
 public interface LoansFeignClient {
@@ -234,8 +234,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.eazybytes.accounts.model.Cards;
-import com.eazybytes.accounts.model.Customer;
+import model.com.dibbydon.accounts.Cards;
+import model.com.dibbydon.accounts.Customer;
 
 @FeignClient("cards")
 public interface CardsFeignClient {
@@ -260,16 +260,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eazybytes.accounts.config.AccountsServiceConfig;
-import com.eazybytes.accounts.model.Accounts;
-import com.eazybytes.accounts.model.Cards;
-import com.eazybytes.accounts.model.Customer;
-import com.eazybytes.accounts.model.CustomerDetails;
-import com.eazybytes.accounts.model.Loans;
-import com.eazybytes.accounts.model.Properties;
-import com.eazybytes.accounts.repository.AccountsRepository;
-import com.eazybytes.accounts.service.client.CardsFeignClient;
-import com.eazybytes.accounts.service.client.LoansFeignClient;
+import config.com.dibbydon.accounts.AccountsServiceConfig;
+import model.com.dibbydon.accounts.Accounts;
+import model.com.dibbydon.accounts.Cards;
+import model.com.dibbydon.accounts.Customer;
+import model.com.dibbydon.accounts.CustomerDetails;
+import model.com.dibbydon.accounts.Loans;
+import model.com.dibbydon.accounts.Properties;
+import repository.com.dibbydon.accounts.AccountsRepository;
+import client.service.com.dibbydon.accounts.CardsFeignClient;
+import client.service.com.dibbydon.accounts.LoansFeignClient;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
